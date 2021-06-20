@@ -49,7 +49,6 @@ app.get("/coordinates", function (req, res) {
       console.log(err)
       res.send("An error occured").status(501)
     } else {
-      console.log(data)
       if (data.length) {
         res.send(data)
       } else {
